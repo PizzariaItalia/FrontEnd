@@ -1,0 +1,23 @@
+.card{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 500px;
+}
+
+.info{
+   display: inline-block; 
+   width: 400px;
+   gap: 10px;
+   h1{
+    font-size: 2em;
+   }
+   h2{
+    font-size: 1em;
+   }
+}
+
+.img{
+    display: inline-block;
+    justify-content: end;
+}

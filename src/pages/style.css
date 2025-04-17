@@ -1,5 +1,22 @@
-.body{
-    margin: 0;
-    padding: 0;
+.containerTE{
+    display: flex;
+    margin: 10px 50px;
+    justify-content: left;
+    border: 1px solid red;
+    
+}
+
+.accordion{
+    width: 600px;
+    margin: 10px;
+    padding: 20px;
+    display: inline-block;
+    border: 1px solid black;
+    text-align: start;
+}
+
+.titulo{
+    font-size: 1.3em;
+    margin: 10px;
 }
 

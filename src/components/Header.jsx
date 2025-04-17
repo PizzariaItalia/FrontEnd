@@ -1,5 +1,6 @@
 import styles from './Header.module.css'
 
+
 export default function Header(){
     return(
     <>
@@ -9,8 +10,7 @@ export default function Header(){
             <a href="">
                 <img src="https://i.pinimg.com/736x/ed/9f/44/ed9f4416b4e2840112eee23022d63242.jpg" alt="Contato" 
                 width={60}
-                height={60}/>
-            </a>
+                height={60}/></a>
             </div> 
         </header>
         <nav>
