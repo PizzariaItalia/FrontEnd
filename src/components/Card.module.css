@@ -1,23 +1,24 @@
+
 .card{
-    display: flex;
-    align-items: center;
-    background-color: white;
     width: 500px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .info{
-   display: inline-block; 
+   display: inline-block;
    width: 400px;
-   gap: 10px;
    h1{
     font-size: 2em;
    }
    h2{
-    font-size: 1em;
+    font-size: 1.3em;
+    font-family: 'Times New Roman', Times, serif; 
    }
 }
 
 .img{
+    margin: 10px;
     display: inline-block;
     justify-content: end;
 }
