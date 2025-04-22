@@ -4,9 +4,9 @@ import { Accordion, Avatar, HStack, Span } from "@chakra-ui/react"
 
 export default function Menu({titulo, img, itens}) {
     return(
-    <div className={styles.card}>
-                <Accordion.Root collapsible> 
-                <Accordion.Item>
+    <div className={styles.menu}>
+                <Accordion.Root collapsible defaultValue={["Menu"]}> 
+                <Accordion.Item value="Menu">
                 <Accordion.ItemTrigger>
                 <Avatar.Root shape="rounded" style={{margin: 3}}>
                 <Avatar.Image src={img} />
