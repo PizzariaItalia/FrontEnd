@@ -1,9 +1,7 @@
 .containerTE{
-    display: flex;
-    margin: 10px 50px;
-    justify-content: left;
+    display: inline-block;
+    margin: 0 70px;
     width: 90%;
-    border: 1px solid red;
 }
 
 

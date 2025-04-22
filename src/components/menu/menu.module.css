@@ -1,12 +1,18 @@
+.conteudo{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 15px;
+    
+}
+
 .item{
     width: 550px;
     margin: 10px;
     padding: 10px;
     display: inline-block;
     text-align: start;
-    background-color: rgb(248, 247, 246);
-    border: 1px solid black;
-    border-radius: 10pz;
+    background-color: rgb(253, 253, 253);
+    border-radius: 10px;
 }
 
 .titulo{
@@ -15,6 +21,7 @@
 }
 
 .card{
+    margin: 20px 0px;
     width: 100%;
     border-top: 2px solid black;
     border-radius: 5px;

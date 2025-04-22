@@ -17,11 +17,11 @@ export default function Header(){
         <nav>
             <ul className={styles.Menu}>
                 <li><a href="">Entrada</a></li>
-                <li><a href="">Adicionais</a></li>
                 <li><a href="">Pizzas</a></li>
                 <li><a href="">Bebidas</a></li>
                 <li><a href="">Vinhos</a></li>
                 <li><a href="">Sobremesas</a></li>
+                <li><a href="">Sobre</a></li>
             </ul>
         </nav>  
     </div>
