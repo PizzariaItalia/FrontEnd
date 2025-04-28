@@ -1,7 +1,9 @@
+import { Item } from '../types/menu';
 import styles from './Card.module.css'
 
 
-export default function Carditens({nome, img, des, valor}) {
+
+export default function Carditens({nome, img, des, valor}:Item) {
     return(
         //Separação de um Produto, com titulo descrição valor e imagem
         <a href="" className={styles.card}>

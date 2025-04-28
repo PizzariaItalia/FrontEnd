@@ -1,16 +1,20 @@
 import Carditens from '../../components/Card-itens'
+import { MenuProps } from '../../types/menu';
 import styles from './menu.module.css'
-import { Accordion, Avatar, HStack, Span } from "@chakra-ui/react"
+import { Accordion, Avatar, AvatarImage, HStack, } from "@chakra-ui/react"
 
-export default function Menu({titulo, img, itens}) {
+
+export default function Menu({titulo, img, itens}: MenuProps) {
+
+    console.log(itens)
     return(
     <div className={styles.menu}>
-                <Accordion.Root collapsible defaultValue={["Menu"]}> 
-                <Accordion.Item value="Menu">
+                <Accordion.Root collapsible defaultValue={[titulo]}> 
+                <Accordion.Item value={titulo}>
                 <Accordion.ItemTrigger>
-                <Avatar.Root shape="rounded" style={{margin: 3}}>
-                <Avatar.Image src={img} />
-                <Avatar.Fallback name={titulo} />
+                <Avatar.Root shape="rounded">
+                    <AvatarImage src={img} marginLeft={"2px"}/>
+                    <Avatar.Fallback name={titulo} />
                 </Avatar.Root>
                 <HStack flex="1">
                 {titulo}{" "}

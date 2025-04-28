@@ -8,23 +8,26 @@
 
 .item{
     width: 510px;
-    margin: 10px 20px;
+    margin-right: 30px;
     display: inline-block;
     text-align: start;
-    background-color: rgb(253, 253, 253);
+    background-color: #F9F5F0;
     border-radius: 10px;
+    
     
 }
 
 .titulo{
     font-size: 1.3em;
     margin: 10px;
+    color: #3B2F2F;
 }
 
 .menu{
     margin: 20px 10px;
     width: 100%;
-    border-top: 2px solid black;
+    border-top: 2px solid #E0D6CA;
     border-radius: 4px;
-    box-shadow: 1px 1px 4px black;
+    box-shadow: 1px 1px 4px #1a1919;
+    background-color: #F9F5F0;
 }

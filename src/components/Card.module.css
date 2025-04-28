@@ -3,6 +3,7 @@
     width: 540px;
     height: 130px;
     display: flex;
+    margin: 10px;
     justify-content: space-between;
     font-family: "Special Gothic", sans-serif;
     font-weight: 400;
@@ -12,9 +13,9 @@
     
 }
 .card:hover{
-    background-color: rgb(253, 253, 253);
+    background-color: #E9B384;
     transform: scale(1.02);
-    border-radius: 10;
+    border-radius: 10px;
 }
 
 .info{
@@ -22,23 +23,28 @@
    flex-direction: column;
    width: 430px;
    h1{
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-weight: bold;
+    text-transform: uppercase;
+    color: #3B2F2F;
    }
    h2{
     font-size: 1.2em;
     font-family: 'Times New Roman', Times, serif;
     padding: 2px; 
+    color: #756C63;
    }
    span{
     font-weight: bold;
     font-size: 1.2em;
     margin-top: auto;
     font-family: 'Times New Roman', Times, serif;
+    color: #3B2F2F;
    } 
 }
 
 .img{
-    margin: 10px 4px;
+    margin: 5px 4px;
+    
     
 }

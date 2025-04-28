@@ -1,0 +1,26 @@
+{
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./src", //Diterório de códigos TypeScript 
+    "outDir": "./lib", //Diretório de saída para os arquivos compilados
+    "sourceMap": true, //cria um arquivo de mapeamento
+    "noImplicitAny": true, //Não permite declaração de variaveis ou parâmetros sem tipo
+    "noImplicitReturns": true, // Verifica se todas as funções possuem tipo de retorno informado
+    "noEmitOnError": true, //Não gea o código JS caso haja algum erro durante o processo de compilação
+    "strictNullChecks": true, //força a verificação de valores null ou undefined
+    "noUnusedLocals": true, //sinaliza quando existem variaveis decladas e não utilizadas
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "compileOnSave": true,
+  "include": ["src/**/*",
+  "src/custom.d.ts"
+  ]
+                             
+
+}
