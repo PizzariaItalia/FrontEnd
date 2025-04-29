@@ -1,8 +1,23 @@
 import styles from './Header.module.css'
 import { useState,useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Header(){
+
+    
+    const navigate = useNavigate();    
+    const handleRedirect = () => {
+        navigate('/sobre');
+        };
+
+    const handleRedirectHome = () => {
+        navigate('/');
+        };
+
+    const handleClick = () => {
+        window.location.href = 'https://wa.me/5519981438835?text=Bem%20vindo%20a%20Minha%20api';
+    };
 
     function handleScrollTo(id: string, event: React.MouseEvent<HTMLAnchorElement>) {
         event.preventDefault();
@@ -14,6 +29,10 @@ export default function Header(){
                 top: element.offsetTop - offset,  // Subtrai o offset para alinhar com o topo do menu
                 behavior: 'smooth',
             });
+        }
+        else{
+            handleRedirectHome()
+
         }
     }
 
@@ -40,7 +59,7 @@ export default function Header(){
     <div className={styles.main}>
     <header className={styles.Header}>
             <div className={styles.Contato}>
-            <a>
+            <a onClick={handleClick}>
                 <img src="https://i.pinimg.com/736x/ed/9f/44/ed9f4416b4e2840112eee23022d63242.jpg" alt="Contato" 
                 width={60}
                 height={60}
@@ -54,10 +73,9 @@ export default function Header(){
                     <li><a href="#" onClick={(event) => handleScrollTo('bebidas', event)}>Bebidas</a></li>
                     <li><a href="#" onClick={(event) => handleScrollTo('vinhos', event)}>Vinhos</a></li>
                     <li><a href="#" onClick={(event) => handleScrollTo('sobremesas', event)}>Sobremesas</a></li>
-                    <li><a href="#" onClick={(event) => handleScrollTo('sobre',event)}>Sobre</a></li>
+                    <li><a href="#" onClick={handleRedirect}>Sobre</a></li>
                 </ul>
         </nav> 
     </div>
     );
-
 }

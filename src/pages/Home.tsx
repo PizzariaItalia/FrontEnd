@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Entrada, Pizza, Bebida, Vinho, Sobremesa } from '../types/menu';
 
+
 const imagens = {
     imgPizzas : "https://files.menudino.com/cardapios/39701/19.jpg",
     imgEntrada: "https://files.menudino.com/cardapios/39701/90.jpg",
@@ -17,11 +18,14 @@ const imagens = {
 
 export default function Home(){
 
+
     const [entradas, setEntradas] = useState<Entrada[]>([]);
     const [pizzas, setPizzas]       = useState<Pizza[]>([]);
     const [bebidas, setBebidas]     = useState<Bebida[]>([]);
     const [vinhos, setVinhos]       = useState<Vinho[]>([]);
     const [sobremesas, setSobremesas] = useState<Sobremesa[]>([]);
+
+
 
     async function getApiHome() {
         const responde =  await axios.get("http://localhost:3000/menu")

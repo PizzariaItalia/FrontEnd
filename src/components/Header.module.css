@@ -22,6 +22,9 @@
     align-items: end;
     justify-content: end;
     align-items: end;
+    a:hover{
+        cursor: pointer; 
+    }
 }
 
 .Contato img{
@@ -30,7 +33,8 @@
 }
 
 .Contato img:hover{
-   transform: scale(1.1); 
+   transform: scale(1.1);
+   transition: all 0.2s ease-in;
 }
 
 .Menu{
